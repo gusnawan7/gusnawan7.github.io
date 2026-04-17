@@ -3,53 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | Muhammad Rizki Gusnawan</title>
+    <title>Portofolio Muhammad Rizki Gusnawan</title>
     <style>
-        :root { --primary: #004a99; --dark: #1a1a1a; --light: #f4f4f4; }
-        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; color: var(--dark); background: var(--light); }
-        header { background: var(--primary); color: white; padding: 3rem 1rem; text-align: center; }
-        .container { max-width: 800px; margin: auto; padding: 2rem; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h2 { border-bottom: 2px solid var(--primary); padding-bottom: 10px; color: var(--primary); }
-        .job { margin-bottom: 20px; }
-        .job-title { font-weight: bold; font-size: 1.2rem; margin: 0; }
-        .company { color: #666; font-style: italic; margin-bottom: 5px; }
-        .skill-tag { background: #e8f0f8; color: var(--primary); padding: 5px 12px; border-radius: 4px; font-size: 0.9rem; margin-right: 5px; display: inline-block; margin-top: 5px; }
-        .contact-link { display: inline-block; margin-top: 10px; padding: 10px 20px; background: var(--primary); color: white; text-decoration: none; border-radius: 5px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f0f2f5; }
+        .container { background-color: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        h1 { color: #0056b3; margin-bottom: 5px; text-align: center; }
+        .subtitle { color: #666; font-size: 1.1em; text-align: center; margin-bottom: 30px; font-weight: 500; }
+        h2 { color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 30px; }
+        
+        /* Kolom Terpisah untuk CV PDF */
+        .cv-card { 
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            border: 1px solid #adc5e7; 
+            padding: 30px; 
+            border-radius: 10px; 
+            margin: 40px 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cv-card p { margin-bottom: 20px; font-weight: 600; color: #004085; font-size: 1.1em; }
+        
+        .btn-pdf { 
+            display: inline-flex; 
+            align-items: center; 
+            padding: 15px 30px; 
+            background-color: #d9534f; /* Warna merah identik dengan PDF */
+            color: white; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            font-size: 1.1em;
+            transition: transform 0.2s, background 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn-pdf:hover { background-color: #c9302c; transform: translateY(-2px); }
+        
+        .contact-info { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; }
+        .btn-wa { display: inline-block; margin-top: 10px; color: #25d366; font-weight: bold; text-decoration: none; border: 2px solid #25d366; padding: 8px 20px; border-radius: 25px; }
+        .btn-wa:hover { background-color: #25d366; color: white; }
+        
+        ul { padding-left: 20px; }
+        li { margin-bottom: 12px; }
     </style>
 </head>
 <body>
-<header>
-    <h1>Muhammad Rizki Gusnawan</h1>
-    <p>Engineering Onsite | Network Monitoring Specialist</p>
-</header>
+
 <div class="container">
-    <section>
-        <h2>Profil Profesional</h2>
-        <p>Profesional telekomunikasi dengan pengalaman lebih dari 3 tahun. Spesialis dalam monitoring jaringan (NMS, Zabbix, PRTG) dan infrastruktur backbone (DWDM).</p>
-        <div class="skills">
-            <span class="skill-tag">NMS (Zabbix, PRTG, Cacti)</span>
-            <span class="skill-tag">DWDM & Backbone</span>
-            <span class="skill-tag">Linux Administration</span>
-        </div>
-    </section>
-    <section>
-        <h2>Pengalaman Kerja</h2>
-        <div class="job">
-            <p class="job-title">Engineering Onsite</p>
-            <p class="company">PT Telekomunikasi Infra Indonesia | 2024 - Sekarang</p>
-        </div>
-        <div class="job">
-            <p class="job-title">Engineering Onsite</p>
-            <p class="company">PT Telekomunikasi Indonesia | 2022 - 2023</p>
-        </div>
-    </section>
-    <section>
-        <a href="curriculum vitae-Muhammad Rizki Gusnawan.pdf" target="_blank">Lihat CV Lengkap (PDF)</a>
-        <h2>Kontak</h2>
-        <p>Email: goesnawan7@gmail.com</p>
-        <a href="https://wa.me/6285282466613" class="contact-link">Hubungi via WhatsApp</a>
-    </section>
-   
+    <h1>Muhammad Rizki Gusnawan</h1>
+    <div class="subtitle">Engineering Onsite | Network Infrastructure Specialist</div>
+
+    <h2>PENGALAMAN KERJA</h2>
+    <ul>
+        <li><strong>Engineering Onsite</strong> - PT Telekomunikasi Infra Indonesia (2024 - Sekarang)</li>
+        <li><strong>Engineering Onsite</strong> - PT Telekomunikasi Indonesia (2022 - 2023)</li>
+        <li><strong>Account Manager</strong> - PT Telekomunikasi Indonesia (2022)</li>
+        <li><strong>Sales Force</strong> - PT Telekomunikasi Indonesia (2017 - 2019)</li>
+    </ul>
+
+    <h2>PROYEK & PENGALAMAN LAINNYA</h2>
+    <ul>
+        <li><strong>Linux Study Group:</strong> Aktif dalam pengembangan komunitas belajar jaringan berbasis open-source di Universitas Budi Luhur.</li>
+        <li><strong>Sertifikasi:</strong> Sedang menempuh peningkatan kompetensi bahasa Inggris dan persiapan sertifikasi profesional jaringan.</li>
+    </ul>
+
+    <div class="cv-card">
+        <p>Dokumen Riwayat Hidup Lengkap</p>
+        <a href="curriculum vitae-Muhammad Rizki Gusnawan.pdf" class="btn-pdf" target="_blank">
+            📥 DOWNLOAD / BUKA CV (PDF)
+        </a>
+        <small style="margin-top: 10px; color: #666;">Klik untuk membuka di tab baru</small>
+    </div>
+
+    <div class="contact-info">
+        <p>Email: <strong>goesnawan7@gmail.com</strong></p>
+        <a href="https://wa.me/628123456789" class="btn-wa" target="_blank">Hubungi via WhatsApp</a>
+    </div>
 </div>
+
 </body>
 </html>
